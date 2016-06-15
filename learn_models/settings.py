@@ -1,3 +1,4 @@
+#-*- coding:utf8 -*-
 """
 Django settings for learn_models project.
 
@@ -108,9 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh_CN'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -123,3 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+SUIT_CONFIG = {
+    'ADMIN_NAME': u'麦子青青',
+    'MENU': (
+        'sites',
+        {'app': 'Books', 'label': u'帐户'},
+    ),
+}

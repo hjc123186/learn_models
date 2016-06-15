@@ -1,4 +1,4 @@
-
+#-*- coding:utf8 -*-
 # Register your models here.
 from django.contrib import admin
 from books.models import Publisher,Author,Book
@@ -16,6 +16,10 @@ class BookAdmin(admin.ModelAdmin):
     # fields = ('title','authors','publisher','publication_date')
     filter_horizontal = ('author',)
     raw_id_fields = ('publisher',)
+    # fieldsets = (
+    #     ('书',{'fields':('title',)}),
+    #      )
+
 
 admin.site.register(Publisher)
 # admin.site.register(Author)
